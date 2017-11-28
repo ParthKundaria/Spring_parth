@@ -4,7 +4,8 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("english")
+//@Profile("default")
+@Profile({"default","english"})
 public class HelloWorldEnglishImpl implements HelloWorldService {
     @Override
     public String getGreeting() {
